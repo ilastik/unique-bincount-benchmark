@@ -2,10 +2,12 @@ import platform
 import timeit
 import tracemalloc
 from argparse import ArgumentParser
+from itertools import product
 
 import numpy
 import pandas
 import vigra
+from rich.progress import Progress
 
 SETUP = """
 import numpy
@@ -61,6 +63,7 @@ def parse_args():
 def main():
     args = parse_args()
     check()
+    print("Check OK")
 
     py_version = platform.python_version()
     npy_version = numpy.__version__
@@ -73,25 +76,25 @@ def main():
 
     number = 3
 
-    for shape in [(512, 128, 1), (1024, 512, 1), (2048, 1024, 1), (512, 512, 32), (1024, 1024, 256)]:
-        for method in [
-            "vigra.analysis.unique(data)",
-            "numpy.unique(data)",
-            "bincount_unique(data)",
-            "pandas_unique(data)",
-        ]:
+    shapes = [(512, 128, 1), (1024, 512, 1), (2048, 1024, 1), (512, 512, 32), (1024, 1024, 256)]
+
+    methods = [
+        "vigra.analysis.unique(data)",
+        "numpy.unique(data)",
+        "bincount_unique(data)",
+        "pandas_unique(data)",
+    ]
+
+    combos = list(product(methods, shapes))
+
+    with Progress() as p:
+        for method, shape in p.track(combos, description="Measuring runtime"):
             t = timeit.timeit(method, setup=SETUP.format(shape=shape), number=number) / number
             results[(method, shape)] = (
                 f"{method}\t{shape!s}\t{t}\t{py_version}\t{npy_version}\t{pd_version}\t{vigra_version}\t{host}\t{pf}"
             )
 
-    for shape in [(512, 128, 1), (1024, 512, 1), (2048, 1024, 1), (512, 512, 32), (1024, 1024, 256)]:
-        for method in [
-            "vigra.analysis.unique(data)",
-            "numpy.unique(data)",
-            "bincount_unique(data)",
-            "pandas_unique(data)",
-        ]:
+        for method, shape in p.track(combos, description="Measuring memory footprint"):
             tracemalloc.start()
             _t = timeit.timeit(method, setup=SETUP.format(shape=shape), number=number) / number
 
