@@ -99,3 +99,23 @@ pandas_unique(data)	(1024, 512, 1)	0.0034893269961078963	3.12.5	1.26.4	2.2.2	1.1
 pandas_unique(data)	(2048, 1024, 1)	0.010692848358303308	3.12.5	1.26.4	2.2.2	1.11.1	Stuart's Macbook Pro (Intel 2019)	macOS-13.6.6-x86_64-i386-64bit	50	33823528
 pandas_unique(data)	(512, 512, 32)	0.034439300652593374	3.12.5	1.26.4	2.2.2	1.11.1	Stuart's Macbook Pro (Intel 2019)	macOS-13.6.6-x86_64-i386-64bit	6605	59014513
 pandas_unique(data)	(1024, 1024, 256)	1.111724218974511	3.12.5	1.26.4	2.2.2	1.11.1	Stuart's Macbook Pro (Intel 2019)	macOS-13.6.6-x86_64-i386-64bit	21486	1099217420
+vigra.analysis.unique(data)	(512, 128, 1)	0.0005922363333183966	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's xps13 i7	Linux-5.15.0-117-generic-x86_64-with-glibc2.31	817	267636
+vigra.analysis.unique(data)	(1024, 512, 1)	0.00515690666664644	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's xps13 i7	Linux-5.15.0-117-generic-x86_64-with-glibc2.31	513	2102366
+vigra.analysis.unique(data)	(2048, 1024, 1)	0.05973097366666025	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's xps13 i7	Linux-5.15.0-117-generic-x86_64-with-glibc2.31	8953	8421009
+vigra.analysis.unique(data)	(512, 512, 32)	0.2822717800000116	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's xps13 i7	Linux-5.15.0-117-generic-x86_64-with-glibc2.31	6954	33584672
+vigra.analysis.unique(data)	(1024, 1024, 256)	10.206959213333334	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's xps13 i7	Linux-5.15.0-117-generic-x86_64-with-glibc2.31	24775	1073785339
+numpy.unique(data)	(512, 128, 1)	0.00344821566667027	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's xps13 i7	Linux-5.15.0-117-generic-x86_64-with-glibc2.31	152	659371
+numpy.unique(data)	(1024, 512, 1)	0.021206332333349565	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's xps13 i7	Linux-5.15.0-117-generic-x86_64-with-glibc2.31	0	5246773
+numpy.unique(data)	(2048, 1024, 1)	0.08505413566664781	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's xps13 i7	Linux-5.15.0-117-generic-x86_64-with-glibc2.31	9075	20984490
+numpy.unique(data)	(512, 512, 32)	0.3485921886666574	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's xps13 i7	Linux-5.15.0-117-generic-x86_64-with-glibc2.31	16110	83906051
+numpy.unique(data)	(1024, 1024, 256)	11.856027433999998	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's xps13 i7	Linux-5.15.0-117-generic-x86_64-with-glibc2.31	200209	2684577838
+bincount_unique(data)	(512, 128, 1)	0.00015077466665995112	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's xps13 i7	Linux-5.15.0-117-generic-x86_64-with-glibc2.31	0	792011
+bincount_unique(data)	(1024, 512, 1)	0.0015009146666595068	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's xps13 i7	Linux-5.15.0-117-generic-x86_64-with-glibc2.31	0	6297069
+bincount_unique(data)	(2048, 1024, 1)	0.006383407000006021	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's xps13 i7	Linux-5.15.0-117-generic-x86_64-with-glibc2.31	216	25171655
+bincount_unique(data)	(512, 512, 32)	0.028591588333332158	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's xps13 i7	Linux-5.15.0-117-generic-x86_64-with-glibc2.31	6496	100691668
+bincount_unique(data)	(1024, 1024, 256)	1.1365558246666676	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's xps13 i7	Linux-5.15.0-117-generic-x86_64-with-glibc2.31	17702	3221268323
+pandas_unique(data)	(512, 128, 1)	0.0003325800000008409	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's xps13 i7	Linux-5.15.0-117-generic-x86_64-with-glibc2.31	150	1858408
+pandas_unique(data)	(1024, 512, 1)	0.0022125756666658467	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's xps13 i7	Linux-5.15.0-117-generic-x86_64-with-glibc2.31	150	14818186
+pandas_unique(data)	(2048, 1024, 1)	0.008720032666663732	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's xps13 i7	Linux-5.15.0-117-generic-x86_64-with-glibc2.31	150	33823628
+pandas_unique(data)	(512, 512, 32)	0.035049217666672426	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's xps13 i7	Linux-5.15.0-117-generic-x86_64-with-glibc2.31	8036	59016392
+pandas_unique(data)	(1024, 1024, 256)	1.1302403809999835	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's xps13 i7	Linux-5.15.0-117-generic-x86_64-with-glibc2.31	21660	1099217899
