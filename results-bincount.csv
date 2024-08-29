@@ -124,3 +124,28 @@ numba_bincount(data)	(1024, 512, 1)	0.028155831309656303	3.12.5	1.26.4	2.2.2	1.1
 numba_bincount(data)	(2048, 1024, 1)	0.028297012050946552	3.12.5	1.26.4	2.2.2	1.11.1	Stuart's Macbook Pro (Intel 2019)	macOS-13.6.6-x86_64-i386-64bit	1049514	9502103
 numba_bincount(data)	(512, 512, 32)	0.03773591434583068	3.12.5	1.26.4	2.2.2	1.11.1	Stuart's Macbook Pro (Intel 2019)	macOS-13.6.6-x86_64-i386-64bit	1061668	34670025
 numba_bincount(data)	(1024, 1024, 256)	0.27804856561124325	3.12.5	1.26.4	2.2.2	1.11.1	Stuart's Macbook Pro (Intel 2019)	macOS-13.6.6-x86_64-i386-64bit	1069559	1074864458
+numpy.bincount(data.reshape(-1))	(512, 128, 1)	0.00030246233329004707	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's xps13 i7	Linux-5.15.0-117-generic-x86_64-with-glibc2.31	296	798577
+numpy.bincount(data.reshape(-1))	(1024, 512, 1)	0.001949821000001369	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's xps13 i7	Linux-5.15.0-117-generic-x86_64-with-glibc2.31	296	6303635
+numpy.bincount(data.reshape(-1))	(2048, 1024, 1)	0.00649575366666492	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's xps13 i7	Linux-5.15.0-117-generic-x86_64-with-glibc2.31	296	25178005
+numpy.bincount(data.reshape(-1))	(512, 512, 32)	0.02922058800004379	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's xps13 i7	Linux-5.15.0-117-generic-x86_64-with-glibc2.31	6566	100697982
+numpy.bincount(data.reshape(-1))	(1024, 1024, 256)	0.9891689429999436	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's xps13 i7	Linux-5.15.0-117-generic-x86_64-with-glibc2.31	38286	3221294960
+vigra_bincount(data)	(512, 128, 1)	0.0009424353333239802	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's xps13 i7	Linux-5.15.0-117-generic-x86_64-with-glibc2.31	1618	277682
+vigra_bincount(data)	(1024, 512, 1)	0.007037938666674866	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's xps13 i7	Linux-5.15.0-117-generic-x86_64-with-glibc2.31	903	2112009
+vigra_bincount(data)	(2048, 1024, 1)	0.028502744666639046	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's xps13 i7	Linux-5.15.0-117-generic-x86_64-with-glibc2.31	8091	8424288
+vigra_bincount(data)	(512, 512, 32)	0.11459644999998393	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's xps13 i7	Linux-5.15.0-117-generic-x86_64-with-glibc2.31	12505	33595811
+vigra_bincount(data)	(1024, 1024, 256)	3.63760358999995	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's xps13 i7	Linux-5.15.0-117-generic-x86_64-with-glibc2.31	109860	1073880621
+pandas_bincount(data)	(512, 128, 1)	0.0009676583332899705	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's xps13 i7	Linux-5.15.0-117-generic-x86_64-with-glibc2.31	982	1073269
+pandas_bincount(data)	(1024, 512, 1)	0.0028109333333456257	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's xps13 i7	Linux-5.15.0-117-generic-x86_64-with-glibc2.31	982	8470679
+pandas_bincount(data)	(2048, 1024, 1)	0.009720879333296276	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's xps13 i7	Linux-5.15.0-117-generic-x86_64-with-glibc2.31	12273	33844410
+pandas_bincount(data)	(512, 512, 32)	0.0380808893333627	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's xps13 i7	Linux-5.15.0-117-generic-x86_64-with-glibc2.31	7299	135289124
+pandas_bincount(data)	(1024, 1024, 256)	1.1865479523333609	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's xps13 i7	Linux-5.15.0-117-generic-x86_64-with-glibc2.31	22958	4328559137
+numpy_ufunc_bincount(data)	(512, 128, 1)	0.00020159933334677285	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's xps13 i7	Linux-5.15.0-117-generic-x86_64-with-glibc2.31	296	346854
+numpy_ufunc_bincount(data)	(1024, 512, 1)	0.001332503666693204	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's xps13 i7	Linux-5.15.0-117-generic-x86_64-with-glibc2.31	296	2181896
+numpy_ufunc_bincount(data)	(2048, 1024, 1)	0.005299550000017916	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's xps13 i7	Linux-5.15.0-117-generic-x86_64-with-glibc2.31	6767	8480994
+numpy_ufunc_bincount(data)	(512, 512, 32)	0.02190898133335395	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's xps13 i7	Linux-5.15.0-117-generic-x86_64-with-glibc2.31	6658	33662123
+numpy_ufunc_bincount(data)	(1024, 1024, 256)	0.6968337393333665	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's xps13 i7	Linux-5.15.0-117-generic-x86_64-with-glibc2.31	28192	1073870548
+numba_bincount(data)	(512, 128, 1)	0.0282695403333643	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's xps13 i7	Linux-5.15.0-117-generic-x86_64-with-glibc2.31	1066928	1384894
+numba_bincount(data)	(1024, 512, 1)	0.028730114999992413	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's xps13 i7	Linux-5.15.0-117-generic-x86_64-with-glibc2.31	1063965	3218329
+numba_bincount(data)	(2048, 1024, 1)	0.029844806666687873	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's xps13 i7	Linux-5.15.0-117-generic-x86_64-with-glibc2.31	1049823	9502365
+numba_bincount(data)	(512, 512, 32)	0.04774932799993318	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's xps13 i7	Linux-5.15.0-117-generic-x86_64-with-glibc2.31	1051760	34670362
+numba_bincount(data)	(1024, 1024, 256)	0.25067189166672205	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's xps13 i7	Linux-5.15.0-117-generic-x86_64-with-glibc2.31	1067792	1074864559
