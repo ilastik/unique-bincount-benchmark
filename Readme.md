@@ -17,8 +17,9 @@ conda env create -n bench --file environment.yml
 ```
 conda activate bench
 python bench-unique.py --hostname MyCoolComputer
+python bench-bincount.py --hostname MyCoolComputer
 ```
 
-This will add your results to the `results-unique.csv` table.
+This will add your results to the `results-unique.csv` and `results-bincount.csv` table.
 
 Please open a PR and contribute your results :)
