@@ -1,0 +1,24 @@
+# Results
+
+generated {{ now }}, from results of {{ n_hosts }} machines
+
+## Unique
+
+### Memory usage
+
+![unique-memory-usage](unique-max-memory.png)
+
+### Time
+
+![unique-runningtime](unique-runningtime.png)
+
+## Bincount
+
+### Memory usage
+
+![bincount-memory-usage](bincount-max-memory.png)
+
+### Time
+
+![bincount-runningtime](bincount-runningtime.png)
+
