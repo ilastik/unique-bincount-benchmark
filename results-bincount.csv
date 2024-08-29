@@ -149,3 +149,28 @@ numba_bincount(data)	(1024, 512, 1)	0.028730114999992413	3.12.5	1.26.4	2.2.2	1.1
 numba_bincount(data)	(2048, 1024, 1)	0.029844806666687873	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's xps13 i7	Linux-5.15.0-117-generic-x86_64-with-glibc2.31	1049823	9502365
 numba_bincount(data)	(512, 512, 32)	0.04774932799993318	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's xps13 i7	Linux-5.15.0-117-generic-x86_64-with-glibc2.31	1051760	34670362
 numba_bincount(data)	(1024, 1024, 256)	0.25067189166672205	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's xps13 i7	Linux-5.15.0-117-generic-x86_64-with-glibc2.31	1067792	1074864559
+numpy.bincount(data.reshape(-1))	(512, 128, 1)	0.0003272560037051638	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's Macbook Air 2014 (i5)	macOS-11.7.10-x86_64-i386-64bit	296	798574
+numpy.bincount(data.reshape(-1))	(1024, 512, 1)	0.0024053083228257797	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's Macbook Air 2014 (i5)	macOS-11.7.10-x86_64-i386-64bit	296	6303632
+numpy.bincount(data.reshape(-1))	(2048, 1024, 1)	0.03463735532326003	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's Macbook Air 2014 (i5)	macOS-11.7.10-x86_64-i386-64bit	296	25178002
+numpy.bincount(data.reshape(-1))	(512, 512, 32)	0.06355882833789413	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's Macbook Air 2014 (i5)	macOS-11.7.10-x86_64-i386-64bit	8789	100700709
+numpy.bincount(data.reshape(-1))	(1024, 1024, 256)	3.1543848906682492	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's Macbook Air 2014 (i5)	macOS-11.7.10-x86_64-i386-64bit	74330	3221329966
+vigra_bincount(data)	(512, 128, 1)	0.0015645589834700029	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's Macbook Air 2014 (i5)	macOS-11.7.10-x86_64-i386-64bit	1890	277951
+vigra_bincount(data)	(1024, 512, 1)	0.013866391673218459	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's Macbook Air 2014 (i5)	macOS-11.7.10-x86_64-i386-64bit	7996	2133152
+vigra_bincount(data)	(2048, 1024, 1)	0.06531134434044361	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's Macbook Air 2014 (i5)	macOS-11.7.10-x86_64-i386-64bit	7774	8424311
+vigra_bincount(data)	(512, 512, 32)	0.20767279099284983	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's Macbook Air 2014 (i5)	macOS-11.7.10-x86_64-i386-64bit	14548	33597866
+vigra_bincount(data)	(1024, 1024, 256)	6.517321113671642	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's Macbook Air 2014 (i5)	macOS-11.7.10-x86_64-i386-64bit	130249	1073897144
+pandas_bincount(data)	(512, 128, 1)	0.00324339666015779	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's Macbook Air 2014 (i5)	macOS-11.7.10-x86_64-i386-64bit	1222	1073506
+pandas_bincount(data)	(1024, 512, 1)	0.006477313329620908	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's Macbook Air 2014 (i5)	macOS-11.7.10-x86_64-i386-64bit	1236	8470930
+pandas_bincount(data)	(2048, 1024, 1)	0.030067951340849202	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's Macbook Air 2014 (i5)	macOS-11.7.10-x86_64-i386-64bit	11985	33837734
+pandas_bincount(data)	(512, 512, 32)	0.0666423699973772	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's Macbook Air 2014 (i5)	macOS-11.7.10-x86_64-i386-64bit	9895	135289362
+pandas_bincount(data)	(1024, 1024, 256)	2.195951303001493	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's Macbook Air 2014 (i5)	macOS-11.7.10-x86_64-i386-64bit	21770	4328557950
+numpy_ufunc_bincount(data)	(512, 128, 1)	0.00022637465735897422	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's Macbook Air 2014 (i5)	macOS-11.7.10-x86_64-i386-64bit	600	347155
+numpy_ufunc_bincount(data)	(1024, 512, 1)	0.0015507586649619043	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's Macbook Air 2014 (i5)	macOS-11.7.10-x86_64-i386-64bit	296	2181893
+numpy_ufunc_bincount(data)	(2048, 1024, 1)	0.007136059323480974	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's Macbook Air 2014 (i5)	macOS-11.7.10-x86_64-i386-64bit	296	8473351
+numpy_ufunc_bincount(data)	(512, 512, 32)	0.028778727321575086	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's Macbook Air 2014 (i5)	macOS-11.7.10-x86_64-i386-64bit	7300	33646145
+numpy_ufunc_bincount(data)	(1024, 1024, 256)	1.0301948876779836	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's Macbook Air 2014 (i5)	macOS-11.7.10-x86_64-i386-64bit	23606	1073863748
+numba_bincount(data)	(512, 128, 1)	0.047207562679735325	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's Macbook Air 2014 (i5)	macOS-11.7.10-x86_64-i386-64bit	1069660	1380740
+numba_bincount(data)	(1024, 512, 1)	0.04520684734840567	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's Macbook Air 2014 (i5)	macOS-11.7.10-x86_64-i386-64bit	1060211	3214541
+numba_bincount(data)	(2048, 1024, 1)	0.047087031338984765	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's Macbook Air 2014 (i5)	macOS-11.7.10-x86_64-i386-64bit	1058812	9504567
+numba_bincount(data)	(512, 512, 32)	0.06276061900037651	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's Macbook Air 2014 (i5)	macOS-11.7.10-x86_64-i386-64bit	1061648	34679293
+numba_bincount(data)	(1024, 1024, 256)	0.39703902299515903	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's Macbook Air 2014 (i5)	macOS-11.7.10-x86_64-i386-64bit	51680	1074866304
