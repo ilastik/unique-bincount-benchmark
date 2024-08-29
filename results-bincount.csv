@@ -74,3 +74,28 @@ numba_bincount(data)	(1024, 512, 1)	0.03571976666959623	3.12.5	1.26.4	2.2.2	1.11
 numba_bincount(data)	(2048, 1024, 1)	0.03422386668777714	3.12.5	1.26.4	2.2.2	1.11.1	besthost	Windows-11-10.0.22621-SP0	1086336	9538908
 numba_bincount(data)	(512, 512, 32)	0.043219099985435605	3.12.5	1.26.4	2.2.2	1.11.1	besthost	Windows-11-10.0.22621-SP0	1087661	34704990
 numba_bincount(data)	(1024, 1024, 256)	0.25255996667935204	3.12.5	1.26.4	2.2.2	1.11.1	besthost	Windows-11-10.0.22621-SP0	1095905	1074894317
+numpy.bincount(data.reshape(-1))	(512, 128, 1)	0.00012919066163400808	3.12.5	1.26.4	2.2.2	1.11.1	Janelia HPC node (Intel Sapphire Rapids)	Linux-5.14.0-362.8.1.el9_3.x86_64-x86_64-with-glibc2.34	296	798577
+numpy.bincount(data.reshape(-1))	(1024, 512, 1)	0.000969745684415102	3.12.5	1.26.4	2.2.2	1.11.1	Janelia HPC node (Intel Sapphire Rapids)	Linux-5.14.0-362.8.1.el9_3.x86_64-x86_64-with-glibc2.34	296	6303635
+numpy.bincount(data.reshape(-1))	(2048, 1024, 1)	0.0038271676748991013	3.12.5	1.26.4	2.2.2	1.11.1	Janelia HPC node (Intel Sapphire Rapids)	Linux-5.14.0-362.8.1.el9_3.x86_64-x86_64-with-glibc2.34	296	25178005
+numpy.bincount(data.reshape(-1))	(512, 512, 32)	0.022073739673942327	3.12.5	1.26.4	2.2.2	1.11.1	Janelia HPC node (Intel Sapphire Rapids)	Linux-5.14.0-362.8.1.el9_3.x86_64-x86_64-with-glibc2.34	6562	100700070
+numpy.bincount(data.reshape(-1))	(1024, 1024, 256)	0.7917799873587986	3.12.5	1.26.4	2.2.2	1.11.1	Janelia HPC node (Intel Sapphire Rapids)	Linux-5.14.0-362.8.1.el9_3.x86_64-x86_64-with-glibc2.34	34441	3221291068
+vigra_bincount(data)	(512, 128, 1)	0.0008447073244800171	3.12.5	1.26.4	2.2.2	1.11.1	Janelia HPC node (Intel Sapphire Rapids)	Linux-5.14.0-362.8.1.el9_3.x86_64-x86_64-with-glibc2.34	1890	278007
+vigra_bincount(data)	(1024, 512, 1)	0.0054254077064494295	3.12.5	1.26.4	2.2.2	1.11.1	Janelia HPC node (Intel Sapphire Rapids)	Linux-5.14.0-362.8.1.el9_3.x86_64-x86_64-with-glibc2.34	1943	2113049
+vigra_bincount(data)	(2048, 1024, 1)	0.02111077797599137	3.12.5	1.26.4	2.2.2	1.11.1	Janelia HPC node (Intel Sapphire Rapids)	Linux-5.14.0-362.8.1.el9_3.x86_64-x86_64-with-glibc2.34	8178	8425367
+vigra_bincount(data)	(512, 512, 32)	0.08546768664382398	3.12.5	1.26.4	2.2.2	1.11.1	Janelia HPC node (Intel Sapphire Rapids)	Linux-5.14.0-362.8.1.el9_3.x86_64-x86_64-with-glibc2.34	9986	33592407
+vigra_bincount(data)	(1024, 1024, 256)	2.69755434563073	3.12.5	1.26.4	2.2.2	1.11.1	Janelia HPC node (Intel Sapphire Rapids)	Linux-5.14.0-362.8.1.el9_3.x86_64-x86_64-with-glibc2.34	92678	1073863486
+pandas_bincount(data)	(512, 128, 1)	0.0008178456531216701	3.12.5	1.26.4	2.2.2	1.11.1	Janelia HPC node (Intel Sapphire Rapids)	Linux-5.14.0-362.8.1.el9_3.x86_64-x86_64-with-glibc2.34	982	1073269
+pandas_bincount(data)	(1024, 512, 1)	0.0016648753080517054	3.12.5	1.26.4	2.2.2	1.11.1	Janelia HPC node (Intel Sapphire Rapids)	Linux-5.14.0-362.8.1.el9_3.x86_64-x86_64-with-glibc2.34	932	8470679
+pandas_bincount(data)	(2048, 1024, 1)	0.005360595028226574	3.12.5	1.26.4	2.2.2	1.11.1	Janelia HPC node (Intel Sapphire Rapids)	Linux-5.14.0-362.8.1.el9_3.x86_64-x86_64-with-glibc2.34	12351	33837953
+pandas_bincount(data)	(512, 512, 32)	0.02108485399124523	3.12.5	1.26.4	2.2.2	1.11.1	Janelia HPC node (Intel Sapphire Rapids)	Linux-5.14.0-362.8.1.el9_3.x86_64-x86_64-with-glibc2.34	1198	135282807
+pandas_bincount(data)	(1024, 1024, 256)	0.6571039243135601	3.12.5	1.26.4	2.2.2	1.11.1	Janelia HPC node (Intel Sapphire Rapids)	Linux-5.14.0-362.8.1.el9_3.x86_64-x86_64-with-glibc2.34	17195	4328553377
+numpy_ufunc_bincount(data)	(512, 128, 1)	0.0001283086215456327	3.12.5	1.26.4	2.2.2	1.11.1	Janelia HPC node (Intel Sapphire Rapids)	Linux-5.14.0-362.8.1.el9_3.x86_64-x86_64-with-glibc2.34	296	346854
+numpy_ufunc_bincount(data)	(1024, 512, 1)	0.0008894743708272775	3.12.5	1.26.4	2.2.2	1.11.1	Janelia HPC node (Intel Sapphire Rapids)	Linux-5.14.0-362.8.1.el9_3.x86_64-x86_64-with-glibc2.34	296	2181896
+numpy_ufunc_bincount(data)	(2048, 1024, 1)	0.003465129683415095	3.12.5	1.26.4	2.2.2	1.11.1	Janelia HPC node (Intel Sapphire Rapids)	Linux-5.14.0-362.8.1.el9_3.x86_64-x86_64-with-glibc2.34	296	8473354
+numpy_ufunc_bincount(data)	(512, 512, 32)	0.014442776019374529	3.12.5	1.26.4	2.2.2	1.11.1	Janelia HPC node (Intel Sapphire Rapids)	Linux-5.14.0-362.8.1.el9_3.x86_64-x86_64-with-glibc2.34	6653	33645501
+numpy_ufunc_bincount(data)	(1024, 1024, 256)	0.550317963041986	3.12.5	1.26.4	2.2.2	1.11.1	Janelia HPC node (Intel Sapphire Rapids)	Linux-5.14.0-362.8.1.el9_3.x86_64-x86_64-with-glibc2.34	23041	1073865956
+numba_bincount(data)	(512, 128, 1)	0.021372444927692413	3.12.5	1.26.4	2.2.2	1.11.1	Janelia HPC node (Intel Sapphire Rapids)	Linux-5.14.0-362.8.1.el9_3.x86_64-x86_64-with-glibc2.34	1072964	1385120
+numba_bincount(data)	(1024, 512, 1)	0.019558914626638096	3.12.5	1.26.4	2.2.2	1.11.1	Janelia HPC node (Intel Sapphire Rapids)	Linux-5.14.0-362.8.1.el9_3.x86_64-x86_64-with-glibc2.34	1060831	3211662
+numba_bincount(data)	(2048, 1024, 1)	0.020174433399612706	3.12.5	1.26.4	2.2.2	1.11.1	Janelia HPC node (Intel Sapphire Rapids)	Linux-5.14.0-362.8.1.el9_3.x86_64-x86_64-with-glibc2.34	1060630	9522319
+numba_bincount(data)	(512, 512, 32)	0.023783622697616618	3.12.5	1.26.4	2.2.2	1.11.1	Janelia HPC node (Intel Sapphire Rapids)	Linux-5.14.0-362.8.1.el9_3.x86_64-x86_64-with-glibc2.34	1055316	34673665
+numba_bincount(data)	(1024, 1024, 256)	0.20543648465536535	3.12.5	1.26.4	2.2.2	1.11.1	Janelia HPC node (Intel Sapphire Rapids)	Linux-5.14.0-362.8.1.el9_3.x86_64-x86_64-with-glibc2.34	1064402	1074867769
