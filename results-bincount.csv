@@ -24,3 +24,28 @@ numba_bincount(data)	(1024, 512, 1)	0.012647430664704492	3.12.5	1.26.4	2.2.2	1.1
 numba_bincount(data)	(2048, 1024, 1)	0.013942041667178273	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's Macboock Pro M1	macOS-14.6.1-arm64-arm-64bit	1055547	9507696
 numba_bincount(data)	(512, 512, 32)	0.01709634733075897	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's Macboock Pro M1	macOS-14.6.1-arm64-arm-64bit	1063032	34674153
 numba_bincount(data)	(1024, 1024, 256)	0.15592126399860717	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's Macboock Pro M1	macOS-14.6.1-arm64-arm-64bit	54907	1074866999
+numpy.bincount(data.reshape(-1))	(512, 128, 1)	0.0002800163335147469	3.12.5	1.26.4	2.2.2	1.11.1	thodkatz-hp	Linux-5.15.164-3-MANJARO-x86_64-with-glibc2.40	296	798577
+numpy.bincount(data.reshape(-1))	(1024, 512, 1)	0.002709753666446583	3.12.5	1.26.4	2.2.2	1.11.1	thodkatz-hp	Linux-5.15.164-3-MANJARO-x86_64-with-glibc2.40	296	6303635
+numpy.bincount(data.reshape(-1))	(2048, 1024, 1)	0.008163740666835414	3.12.5	1.26.4	2.2.2	1.11.1	thodkatz-hp	Linux-5.15.164-3-MANJARO-x86_64-with-glibc2.40	296	25178005
+numpy.bincount(data.reshape(-1))	(512, 512, 32)	0.03810608699980852	3.12.5	1.26.4	2.2.2	1.11.1	thodkatz-hp	Linux-5.15.164-3-MANJARO-x86_64-with-glibc2.40	8599	100702639
+numpy.bincount(data.reshape(-1))	(1024, 1024, 256)	3.481475347000014	3.12.5	1.26.4	2.2.2	1.11.1	thodkatz-hp	Linux-5.15.164-3-MANJARO-x86_64-with-glibc2.40	110383	3221361730
+vigra_bincount(data)	(512, 128, 1)	0.0013061036667446995	3.12.5	1.26.4	2.2.2	1.11.1	thodkatz-hp	Linux-5.15.164-3-MANJARO-x86_64-with-glibc2.40	1705	277769
+vigra_bincount(data)	(1024, 512, 1)	0.010320857333378322	3.12.5	1.26.4	2.2.2	1.11.1	thodkatz-hp	Linux-5.15.164-3-MANJARO-x86_64-with-glibc2.40	838	2111944
+vigra_bincount(data)	(2048, 1024, 1)	0.04035660366692658	3.12.5	1.26.4	2.2.2	1.11.1	thodkatz-hp	Linux-5.15.164-3-MANJARO-x86_64-with-glibc2.40	9829	8426392
+vigra_bincount(data)	(512, 512, 32)	0.16321897133335975	3.12.5	1.26.4	2.2.2	1.11.1	thodkatz-hp	Linux-5.15.164-3-MANJARO-x86_64-with-glibc2.40	13222	33596588
+vigra_bincount(data)	(1024, 1024, 256)	5.3142428546671	3.12.5	1.26.4	2.2.2	1.11.1	thodkatz-hp	Linux-5.15.164-3-MANJARO-x86_64-with-glibc2.40	147873	1073919058
+pandas_bincount(data)	(512, 128, 1)	0.0017434923332378578	3.12.5	1.26.4	2.2.2	1.11.1	thodkatz-hp	Linux-5.15.164-3-MANJARO-x86_64-with-glibc2.40	982	1073269
+pandas_bincount(data)	(1024, 512, 1)	0.005347292000199862	3.12.5	1.26.4	2.2.2	1.11.1	thodkatz-hp	Linux-5.15.164-3-MANJARO-x86_64-with-glibc2.40	7304	8489810
+pandas_bincount(data)	(2048, 1024, 1)	0.015356001666683975	3.12.5	1.26.4	2.2.2	1.11.1	thodkatz-hp	Linux-5.15.164-3-MANJARO-x86_64-with-glibc2.40	12124	33837687
+pandas_bincount(data)	(512, 512, 32)	0.06429559433308896	3.12.5	1.26.4	2.2.2	1.11.1	thodkatz-hp	Linux-5.15.164-3-MANJARO-x86_64-with-glibc2.40	7628	135294851
+pandas_bincount(data)	(1024, 1024, 256)	1.7428995153331925	3.12.5	1.26.4	2.2.2	1.11.1	thodkatz-hp	Linux-5.15.164-3-MANJARO-x86_64-with-glibc2.40	20372	4328557669
+numpy_ufunc_bincount(data)	(512, 128, 1)	0.0002091489999050585	3.12.5	1.26.4	2.2.2	1.11.1	thodkatz-hp	Linux-5.15.164-3-MANJARO-x86_64-with-glibc2.40	6250	352864
+numpy_ufunc_bincount(data)	(1024, 512, 1)	0.0020925640001223655	3.12.5	1.26.4	2.2.2	1.11.1	thodkatz-hp	Linux-5.15.164-3-MANJARO-x86_64-with-glibc2.40	296	2181896
+numpy_ufunc_bincount(data)	(2048, 1024, 1)	0.007110940000226644	3.12.5	1.26.4	2.2.2	1.11.1	thodkatz-hp	Linux-5.15.164-3-MANJARO-x86_64-with-glibc2.40	512	8473570
+numpy_ufunc_bincount(data)	(512, 512, 32)	0.03659543899993878	3.12.5	1.26.4	2.2.2	1.11.1	thodkatz-hp	Linux-5.15.164-3-MANJARO-x86_64-with-glibc2.40	8792	33664594
+numpy_ufunc_bincount(data)	(1024, 1024, 256)	1.1807842200002294	3.12.5	1.26.4	2.2.2	1.11.1	thodkatz-hp	Linux-5.15.164-3-MANJARO-x86_64-with-glibc2.40	37866	1073869423
+numba_bincount(data)	(512, 128, 1)	0.05606236466701375	3.12.5	1.26.4	2.2.2	1.11.1	thodkatz-hp	Linux-5.15.164-3-MANJARO-x86_64-with-glibc2.40	1069879	1394430
+numba_bincount(data)	(1024, 512, 1)	0.0485831113334522	3.12.5	1.26.4	2.2.2	1.11.1	thodkatz-hp	Linux-5.15.164-3-MANJARO-x86_64-with-glibc2.40	1057597	3211712
+numba_bincount(data)	(2048, 1024, 1)	0.04693623400028931	3.12.5	1.26.4	2.2.2	1.11.1	thodkatz-hp	Linux-5.15.164-3-MANJARO-x86_64-with-glibc2.40	1059665	9505171
+numba_bincount(data)	(512, 512, 32)	0.08308214666673545	3.12.5	1.26.4	2.2.2	1.11.1	thodkatz-hp	Linux-5.15.164-3-MANJARO-x86_64-with-glibc2.40	1060600	34671923
+numba_bincount(data)	(1024, 1024, 256)	0.3355775099995905	3.12.5	1.26.4	2.2.2	1.11.1	thodkatz-hp	Linux-5.15.164-3-MANJARO-x86_64-with-glibc2.40	1066879	1074863874

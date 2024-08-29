@@ -19,3 +19,23 @@ pandas_unique(data)	(1024, 512, 1)	0.0010990276641678065	3.12.5	1.26.4	2.2.2	1.1
 pandas_unique(data)	(2048, 1024, 1)	0.004261985993556057	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's Macboock Pro M1	macOS-14.6.1-arm64-arm-64bit	150	33823628
 pandas_unique(data)	(512, 512, 32)	0.016869111326135073	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's Macboock Pro M1	macOS-14.6.1-arm64-arm-64bit	404	58989672
 pandas_unique(data)	(1024, 1024, 256)	0.542613527669649	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's Macboock Pro M1	macOS-14.6.1-arm64-arm-64bit	21119	1099217078
+vigra.analysis.unique(data)	(512, 128, 1)	0.0007980133335270997	3.12.5	1.26.4	2.2.2	1.11.1	thodkatz-hp	Linux-5.15.164-3-MANJARO-x86_64-with-glibc2.40	1378	268197
+vigra.analysis.unique(data)	(1024, 512, 1)	0.006843730333154478	3.12.5	1.26.4	2.2.2	1.11.1	thodkatz-hp	Linux-5.15.164-3-MANJARO-x86_64-with-glibc2.40	22475	2124120
+vigra.analysis.unique(data)	(2048, 1024, 1)	0.06969199333313252	3.12.5	1.26.4	2.2.2	1.11.1	thodkatz-hp	Linux-5.15.164-3-MANJARO-x86_64-with-glibc2.40	8019	8419532
+vigra.analysis.unique(data)	(512, 512, 32)	0.28254860266679316	3.12.5	1.26.4	2.2.2	1.11.1	thodkatz-hp	Linux-5.15.164-3-MANJARO-x86_64-with-glibc2.40	26141	33585627
+vigra.analysis.unique(data)	(1024, 1024, 256)	11.088270692667114	3.12.5	1.26.4	2.2.2	1.11.1	thodkatz-hp	Linux-5.15.164-3-MANJARO-x86_64-with-glibc2.40	24517	1073786046
+numpy.unique(data)	(512, 128, 1)	0.003385080333221898	3.12.5	1.26.4	2.2.2	1.11.1	thodkatz-hp	Linux-5.15.164-3-MANJARO-x86_64-with-glibc2.40	152	659371
+numpy.unique(data)	(1024, 512, 1)	0.022509832667007384	3.12.5	1.26.4	2.2.2	1.11.1	thodkatz-hp	Linux-5.15.164-3-MANJARO-x86_64-with-glibc2.40	0	5246773
+numpy.unique(data)	(2048, 1024, 1)	0.09009659700010768	3.12.5	1.26.4	2.2.2	1.11.1	thodkatz-hp	Linux-5.15.164-3-MANJARO-x86_64-with-glibc2.40	8909	20984324
+numpy.unique(data)	(512, 512, 32)	0.4398086439996405	3.12.5	1.26.4	2.2.2	1.11.1	thodkatz-hp	Linux-5.15.164-3-MANJARO-x86_64-with-glibc2.40	14729	83905945
+numpy.unique(data)	(1024, 1024, 256)	18.924161447333365	3.12.5	1.26.4	2.2.2	1.11.1	thodkatz-hp	Linux-5.15.164-3-MANJARO-x86_64-with-glibc2.40	134309	2684497635
+bincount_unique(data)	(512, 128, 1)	0.00020600633373154173	3.12.5	1.26.4	2.2.2	1.11.1	thodkatz-hp	Linux-5.15.164-3-MANJARO-x86_64-with-glibc2.40	1416	793427
+bincount_unique(data)	(1024, 512, 1)	0.001837001999471492	3.12.5	1.26.4	2.2.2	1.11.1	thodkatz-hp	Linux-5.15.164-3-MANJARO-x86_64-with-glibc2.40	0	6297069
+bincount_unique(data)	(2048, 1024, 1)	0.008477848667098442	3.12.5	1.26.4	2.2.2	1.11.1	thodkatz-hp	Linux-5.15.164-3-MANJARO-x86_64-with-glibc2.40	0	25171439
+bincount_unique(data)	(512, 512, 32)	0.0379780903331266	3.12.5	1.26.4	2.2.2	1.11.1	thodkatz-hp	Linux-5.15.164-3-MANJARO-x86_64-with-glibc2.40	7708	100695606
+bincount_unique(data)	(1024, 1024, 256)	5.041456164999545	3.12.5	1.26.4	2.2.2	1.11.1	thodkatz-hp	Linux-5.15.164-3-MANJARO-x86_64-with-glibc2.40	25675	3221276452
+pandas_unique(data)	(512, 128, 1)	0.0011370109999309836	3.12.5	1.26.4	2.2.2	1.11.1	thodkatz-hp	Linux-5.15.164-3-MANJARO-x86_64-with-glibc2.40	5861	1877247
+pandas_unique(data)	(1024, 512, 1)	0.003225472667206001	3.12.5	1.26.4	2.2.2	1.11.1	thodkatz-hp	Linux-5.15.164-3-MANJARO-x86_64-with-glibc2.40	150	14818186
+pandas_unique(data)	(2048, 1024, 1)	0.011783904333545555	3.12.5	1.26.4	2.2.2	1.11.1	thodkatz-hp	Linux-5.15.164-3-MANJARO-x86_64-with-glibc2.40	150	33823628
+pandas_unique(data)	(512, 512, 32)	0.05045557933347785	3.12.5	1.26.4	2.2.2	1.11.1	thodkatz-hp	Linux-5.15.164-3-MANJARO-x86_64-with-glibc2.40	8044	59016332
+pandas_unique(data)	(1024, 1024, 256)	1.572140625999964	3.12.5	1.26.4	2.2.2	1.11.1	thodkatz-hp	Linux-5.15.164-3-MANJARO-x86_64-with-glibc2.40	18003	1099214326
