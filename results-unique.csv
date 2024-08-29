@@ -79,3 +79,23 @@ pandas_unique(data)	(1024, 512, 1)	0.0013003393542021513	3.12.5	1.26.4	2.2.2	1.1
 pandas_unique(data)	(2048, 1024, 1)	0.004852066359793146	3.12.5	1.26.4	2.2.2	1.11.1	Janelia HPC node (Intel Sapphire Rapids)	Linux-5.14.0-362.8.1.el9_3.x86_64-x86_64-with-glibc2.34	150	33823628
 pandas_unique(data)	(512, 512, 32)	0.019564060649524134	3.12.5	1.26.4	2.2.2	1.11.1	Janelia HPC node (Intel Sapphire Rapids)	Linux-5.14.0-362.8.1.el9_3.x86_64-x86_64-with-glibc2.34	6416	59014414
 pandas_unique(data)	(1024, 1024, 256)	0.6264508060024431	3.12.5	1.26.4	2.2.2	1.11.1	Janelia HPC node (Intel Sapphire Rapids)	Linux-5.14.0-362.8.1.el9_3.x86_64-x86_64-with-glibc2.34	30992	1099226959
+vigra.analysis.unique(data)	(512, 128, 1)	0.0005118583018581072	3.12.5	1.26.4	2.2.2	1.11.1	Stuart's Macbook Pro (Intel 2019)	macOS-13.6.6-x86_64-i386-64bit	1643	268462
+vigra.analysis.unique(data)	(1024, 512, 1)	0.004134304045389096	3.12.5	1.26.4	2.2.2	1.11.1	Stuart's Macbook Pro (Intel 2019)	macOS-13.6.6-x86_64-i386-64bit	927	2102780
+vigra.analysis.unique(data)	(2048, 1024, 1)	0.0230854166050752	3.12.5	1.26.4	2.2.2	1.11.1	Stuart's Macbook Pro (Intel 2019)	macOS-13.6.6-x86_64-i386-64bit	6310	8402045
+vigra.analysis.unique(data)	(512, 512, 32)	0.22221458905066052	3.12.5	1.26.4	2.2.2	1.11.1	Stuart's Macbook Pro (Intel 2019)	macOS-13.6.6-x86_64-i386-64bit	15478	33588763
+vigra.analysis.unique(data)	(1024, 1024, 256)	10.19067706540227	3.12.5	1.26.4	2.2.2	1.11.1	Stuart's Macbook Pro (Intel 2019)	macOS-13.6.6-x86_64-i386-64bit	19506	1073784372
+numpy.unique(data)	(512, 128, 1)	0.003251289948821068	3.12.5	1.26.4	2.2.2	1.11.1	Stuart's Macbook Pro (Intel 2019)	macOS-13.6.6-x86_64-i386-64bit	0	659219
+numpy.unique(data)	(1024, 512, 1)	0.021586794250955183	3.12.5	1.26.4	2.2.2	1.11.1	Stuart's Macbook Pro (Intel 2019)	macOS-13.6.6-x86_64-i386-64bit	5983	5252756
+numpy.unique(data)	(2048, 1024, 1)	0.07865407224744558	3.12.5	1.26.4	2.2.2	1.11.1	Stuart's Macbook Pro (Intel 2019)	macOS-13.6.6-x86_64-i386-64bit	8182	20983597
+numpy.unique(data)	(512, 512, 32)	0.2956740229080121	3.12.5	1.26.4	2.2.2	1.11.1	Stuart's Macbook Pro (Intel 2019)	macOS-13.6.6-x86_64-i386-64bit	15278	83905219
+numpy.unique(data)	(1024, 1024, 256)	10.81348630056406	3.12.5	1.26.4	2.2.2	1.11.1	Stuart's Macbook Pro (Intel 2019)	macOS-13.6.6-x86_64-i386-64bit	199181	2684576418
+bincount_unique(data)	(512, 128, 1)	0.0005667830506960551	3.12.5	1.26.4	2.2.2	1.11.1	Stuart's Macbook Pro (Intel 2019)	macOS-13.6.6-x86_64-i386-64bit	0	792011
+bincount_unique(data)	(1024, 512, 1)	0.0018262726565202077	3.12.5	1.26.4	2.2.2	1.11.1	Stuart's Macbook Pro (Intel 2019)	macOS-13.6.6-x86_64-i386-64bit	0	6297069
+bincount_unique(data)	(2048, 1024, 1)	0.008368410325298706	3.12.5	1.26.4	2.2.2	1.11.1	Stuart's Macbook Pro (Intel 2019)	macOS-13.6.6-x86_64-i386-64bit	5962	25194018
+bincount_unique(data)	(512, 512, 32)	0.04256001068279147	3.12.5	1.26.4	2.2.2	1.11.1	Stuart's Macbook Pro (Intel 2019)	macOS-13.6.6-x86_64-i386-64bit	6219	100691809
+bincount_unique(data)	(1024, 1024, 256)	1.9063478047028184	3.12.5	1.26.4	2.2.2	1.11.1	Stuart's Macbook Pro (Intel 2019)	macOS-13.6.6-x86_64-i386-64bit	24642	3221274617
+pandas_unique(data)	(512, 128, 1)	0.0008340336692829927	3.12.5	1.26.4	2.2.2	1.11.1	Stuart's Macbook Pro (Intel 2019)	macOS-13.6.6-x86_64-i386-64bit	2649	1860907
+pandas_unique(data)	(1024, 512, 1)	0.0034893269961078963	3.12.5	1.26.4	2.2.2	1.11.1	Stuart's Macbook Pro (Intel 2019)	macOS-13.6.6-x86_64-i386-64bit	100	14818136
+pandas_unique(data)	(2048, 1024, 1)	0.010692848358303308	3.12.5	1.26.4	2.2.2	1.11.1	Stuart's Macbook Pro (Intel 2019)	macOS-13.6.6-x86_64-i386-64bit	50	33823528
+pandas_unique(data)	(512, 512, 32)	0.034439300652593374	3.12.5	1.26.4	2.2.2	1.11.1	Stuart's Macbook Pro (Intel 2019)	macOS-13.6.6-x86_64-i386-64bit	6605	59014513
+pandas_unique(data)	(1024, 1024, 256)	1.111724218974511	3.12.5	1.26.4	2.2.2	1.11.1	Stuart's Macbook Pro (Intel 2019)	macOS-13.6.6-x86_64-i386-64bit	21486	1099217420

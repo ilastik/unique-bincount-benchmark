@@ -99,3 +99,28 @@ numba_bincount(data)	(1024, 512, 1)	0.019558914626638096	3.12.5	1.26.4	2.2.2	1.1
 numba_bincount(data)	(2048, 1024, 1)	0.020174433399612706	3.12.5	1.26.4	2.2.2	1.11.1	Janelia HPC node (Intel Sapphire Rapids)	Linux-5.14.0-362.8.1.el9_3.x86_64-x86_64-with-glibc2.34	1060630	9522319
 numba_bincount(data)	(512, 512, 32)	0.023783622697616618	3.12.5	1.26.4	2.2.2	1.11.1	Janelia HPC node (Intel Sapphire Rapids)	Linux-5.14.0-362.8.1.el9_3.x86_64-x86_64-with-glibc2.34	1055316	34673665
 numba_bincount(data)	(1024, 1024, 256)	0.20543648465536535	3.12.5	1.26.4	2.2.2	1.11.1	Janelia HPC node (Intel Sapphire Rapids)	Linux-5.14.0-362.8.1.el9_3.x86_64-x86_64-with-glibc2.34	1064402	1074867769
+numpy.bincount(data.reshape(-1))	(512, 128, 1)	0.0002404216987391313	3.12.5	1.26.4	2.2.2	1.11.1	Stuart's Macbook Pro (Intel 2019)	macOS-13.6.6-x86_64-i386-64bit	296	798574
+numpy.bincount(data.reshape(-1))	(1024, 512, 1)	0.003125874325633049	3.12.5	1.26.4	2.2.2	1.11.1	Stuart's Macbook Pro (Intel 2019)	macOS-13.6.6-x86_64-i386-64bit	6537	6328362
+numpy.bincount(data.reshape(-1))	(2048, 1024, 1)	0.008306737213085095	3.12.5	1.26.4	2.2.2	1.11.1	Stuart's Macbook Pro (Intel 2019)	macOS-13.6.6-x86_64-i386-64bit	296	25178002
+numpy.bincount(data.reshape(-1))	(512, 512, 32)	0.03957340866327286	3.12.5	1.26.4	2.2.2	1.11.1	Stuart's Macbook Pro (Intel 2019)	macOS-13.6.6-x86_64-i386-64bit	8712	100702780
+numpy.bincount(data.reshape(-1))	(1024, 1024, 256)	1.8381490400061011	3.12.5	1.26.4	2.2.2	1.11.1	Stuart's Macbook Pro (Intel 2019)	macOS-13.6.6-x86_64-i386-64bit	59945	3221315472
+vigra_bincount(data)	(512, 128, 1)	0.0013927522425850232	3.12.5	1.26.4	2.2.2	1.11.1	Stuart's Macbook Pro (Intel 2019)	macOS-13.6.6-x86_64-i386-64bit	1423	277484
+vigra_bincount(data)	(1024, 512, 1)	0.009570136355857054	3.12.5	1.26.4	2.2.2	1.11.1	Stuart's Macbook Pro (Intel 2019)	macOS-13.6.6-x86_64-i386-64bit	2247	2113350
+vigra_bincount(data)	(2048, 1024, 1)	0.031224086104581755	3.12.5	1.26.4	2.2.2	1.11.1	Stuart's Macbook Pro (Intel 2019)	macOS-13.6.6-x86_64-i386-64bit	7779	8423959
+vigra_bincount(data)	(512, 512, 32)	0.11140100254366796	3.12.5	1.26.4	2.2.2	1.11.1	Stuart's Macbook Pro (Intel 2019)	macOS-13.6.6-x86_64-i386-64bit	12665	33595880
+vigra_bincount(data)	(1024, 1024, 256)	3.8366502386828265	3.12.5	1.26.4	2.2.2	1.11.1	Stuart's Macbook Pro (Intel 2019)	macOS-13.6.6-x86_64-i386-64bit	117429	1073888164
+pandas_bincount(data)	(512, 128, 1)	0.001379001730432113	3.12.5	1.26.4	2.2.2	1.11.1	Stuart's Macbook Pro (Intel 2019)	macOS-13.6.6-x86_64-i386-64bit	982	1073266
+pandas_bincount(data)	(1024, 512, 1)	0.004047185958673556	3.12.5	1.26.4	2.2.2	1.11.1	Stuart's Macbook Pro (Intel 2019)	macOS-13.6.6-x86_64-i386-64bit	7377	8477071
+pandas_bincount(data)	(2048, 1024, 1)	0.011728068968902031	3.12.5	1.26.4	2.2.2	1.11.1	Stuart's Macbook Pro (Intel 2019)	macOS-13.6.6-x86_64-i386-64bit	5606	33837734
+pandas_bincount(data)	(512, 512, 32)	0.0452723305982848	3.12.5	1.26.4	2.2.2	1.11.1	Stuart's Macbook Pro (Intel 2019)	macOS-13.6.6-x86_64-i386-64bit	7442	135289264
+pandas_bincount(data)	(1024, 1024, 256)	1.2424926883541048	3.12.5	1.26.4	2.2.2	1.11.1	Stuart's Macbook Pro (Intel 2019)	macOS-13.6.6-x86_64-i386-64bit	27508	4328559351
+numpy_ufunc_bincount(data)	(512, 128, 1)	0.0005121743306517601	3.12.5	1.26.4	2.2.2	1.11.1	Stuart's Macbook Pro (Intel 2019)	macOS-13.6.6-x86_64-i386-64bit	536	347091
+numpy_ufunc_bincount(data)	(1024, 512, 1)	0.0016781380400061607	3.12.5	1.26.4	2.2.2	1.11.1	Stuart's Macbook Pro (Intel 2019)	macOS-13.6.6-x86_64-i386-64bit	296	2181893
+numpy_ufunc_bincount(data)	(2048, 1024, 1)	0.006248947077741225	3.12.5	1.26.4	2.2.2	1.11.1	Stuart's Macbook Pro (Intel 2019)	macOS-13.6.6-x86_64-i386-64bit	296	8473351
+numpy_ufunc_bincount(data)	(512, 512, 32)	0.022072128641108673	3.12.5	1.26.4	2.2.2	1.11.1	Stuart's Macbook Pro (Intel 2019)	macOS-13.6.6-x86_64-i386-64bit	6778	33662152
+numpy_ufunc_bincount(data)	(1024, 1024, 256)	0.7324663929951688	3.12.5	1.26.4	2.2.2	1.11.1	Stuart's Macbook Pro (Intel 2019)	macOS-13.6.6-x86_64-i386-64bit	28918	1073871635
+numba_bincount(data)	(512, 128, 1)	0.034859559343506895	3.12.5	1.26.4	2.2.2	1.11.1	Stuart's Macbook Pro (Intel 2019)	macOS-13.6.6-x86_64-i386-64bit	1061988	1379830
+numba_bincount(data)	(1024, 512, 1)	0.028155831309656303	3.12.5	1.26.4	2.2.2	1.11.1	Stuart's Macbook Pro (Intel 2019)	macOS-13.6.6-x86_64-i386-64bit	1058059	3212619
+numba_bincount(data)	(2048, 1024, 1)	0.028297012050946552	3.12.5	1.26.4	2.2.2	1.11.1	Stuart's Macbook Pro (Intel 2019)	macOS-13.6.6-x86_64-i386-64bit	1049514	9502103
+numba_bincount(data)	(512, 512, 32)	0.03773591434583068	3.12.5	1.26.4	2.2.2	1.11.1	Stuart's Macbook Pro (Intel 2019)	macOS-13.6.6-x86_64-i386-64bit	1061668	34670025
+numba_bincount(data)	(1024, 1024, 256)	0.27804856561124325	3.12.5	1.26.4	2.2.2	1.11.1	Stuart's Macbook Pro (Intel 2019)	macOS-13.6.6-x86_64-i386-64bit	1069559	1074864458
