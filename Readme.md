@@ -23,3 +23,5 @@ python bench-bincount.py --hostname MyCoolComputer
 This will add your results to the `results-unique.csv` and `results-bincount.csv` table.
 
 Please open a PR and contribute your results :)
+
+**--> [Link to current results](https://github.com/ilastik/unique-bincount-benchmark/blob/results/Results.md) <--**
