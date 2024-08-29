@@ -1,1 +1,21 @@
 method	shape	t	py_version	npy_version	pandas_version	vigra_version	host	platform	mem_min	mem_max
+vigra.analysis.unique(data)	(512, 128, 1)	0.00020687499394019446	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's Macboock Pro M1	macOS-14.6.1-arm64-arm-64bit	1142	267961
+vigra.analysis.unique(data)	(1024, 512, 1)	0.0013613610062748194	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's Macboock Pro M1	macOS-14.6.1-arm64-arm-64bit	1510	2103363
+vigra.analysis.unique(data)	(2048, 1024, 1)	0.006386861331217612	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's Macboock Pro M1	macOS-14.6.1-arm64-arm-64bit	496	8393823
+vigra.analysis.unique(data)	(512, 512, 32)	0.08459263866340432	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's Macboock Pro M1	macOS-14.6.1-arm64-arm-64bit	7643	33583777
+vigra.analysis.unique(data)	(1024, 1024, 256)	4.4417390973248985	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's Macboock Pro M1	macOS-14.6.1-arm64-arm-64bit	18576	1073784092
+numpy.unique(data)	(512, 128, 1)	0.0018012359990583111	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's Macboock Pro M1	macOS-14.6.1-arm64-arm-64bit	0	659219
+numpy.unique(data)	(1024, 512, 1)	0.014756083333243927	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's Macboock Pro M1	macOS-14.6.1-arm64-arm-64bit	0	5246773
+numpy.unique(data)	(2048, 1024, 1)	0.05850434733050255	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's Macboock Pro M1	macOS-14.6.1-arm64-arm-64bit	8097	20983512
+numpy.unique(data)	(512, 512, 32)	0.2401878750048733	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's Macboock Pro M1	macOS-14.6.1-arm64-arm-64bit	13354	83903295
+numpy.unique(data)	(1024, 1024, 256)	8.090754694334464	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's Macboock Pro M1	macOS-14.6.1-arm64-arm-64bit	201911	2684559527
+bincount_unique(data)	(512, 128, 1)	0.00020216667326167226	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's Macboock Pro M1	macOS-14.6.1-arm64-arm-64bit	0	792011
+bincount_unique(data)	(1024, 512, 1)	0.000990666662498067	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's Macboock Pro M1	macOS-14.6.1-arm64-arm-64bit	0	6297069
+bincount_unique(data)	(2048, 1024, 1)	0.003394611005205661	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's Macboock Pro M1	macOS-14.6.1-arm64-arm-64bit	0	25171439
+bincount_unique(data)	(512, 512, 32)	0.020755305333295837	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's Macboock Pro M1	macOS-14.6.1-arm64-arm-64bit	6188	100693826
+bincount_unique(data)	(1024, 1024, 256)	0.6333032360028786	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's Macboock Pro M1	macOS-14.6.1-arm64-arm-64bit	20510	3221268294
+pandas_unique(data)	(512, 128, 1)	0.0002599166667399307	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's Macboock Pro M1	macOS-14.6.1-arm64-arm-64bit	150	1858408
+pandas_unique(data)	(1024, 512, 1)	0.0010990276641678065	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's Macboock Pro M1	macOS-14.6.1-arm64-arm-64bit	100	14818136
+pandas_unique(data)	(2048, 1024, 1)	0.004261985993556057	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's Macboock Pro M1	macOS-14.6.1-arm64-arm-64bit	150	33823628
+pandas_unique(data)	(512, 512, 32)	0.016869111326135073	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's Macboock Pro M1	macOS-14.6.1-arm64-arm-64bit	404	58989672
+pandas_unique(data)	(1024, 1024, 256)	0.542613527669649	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's Macboock Pro M1	macOS-14.6.1-arm64-arm-64bit	21119	1099217078

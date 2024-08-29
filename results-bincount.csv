@@ -1,1 +1,26 @@
 method	shape	t	py_version	npy_version	pandas_version	vigra_version	host	platform	mem_min	mem_max
+numpy.bincount(data.reshape(-1))	(512, 128, 1)	0.00011458333271245162	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's Macboock Pro M1	macOS-14.6.1-arm64-arm-64bit	296	798574
+numpy.bincount(data.reshape(-1))	(1024, 512, 1)	0.0010478333376037579	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's Macboock Pro M1	macOS-14.6.1-arm64-arm-64bit	296	6303632
+numpy.bincount(data.reshape(-1))	(2048, 1024, 1)	0.003856110997730866	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's Macboock Pro M1	macOS-14.6.1-arm64-arm-64bit	296	25178002
+numpy.bincount(data.reshape(-1))	(512, 512, 32)	0.018011069332715124	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's Macboock Pro M1	macOS-14.6.1-arm64-arm-64bit	6789	100700118
+numpy.bincount(data.reshape(-1))	(1024, 1024, 256)	0.60954100000284	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's Macboock Pro M1	macOS-14.6.1-arm64-arm-64bit	26543	3221280027
+vigra_bincount(data)	(512, 128, 1)	0.0006050693336874247	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's Macboock Pro M1	macOS-14.6.1-arm64-arm-64bit	1943	278004
+vigra_bincount(data)	(1024, 512, 1)	0.004439791664481163	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's Macboock Pro M1	macOS-14.6.1-arm64-arm-64bit	1045	2112148
+vigra_bincount(data)	(2048, 1024, 1)	0.018022986002809677	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's Macboock Pro M1	macOS-14.6.1-arm64-arm-64bit	903	8403464
+vigra_bincount(data)	(512, 512, 32)	0.06916220833469804	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's Macboock Pro M1	macOS-14.6.1-arm64-arm-64bit	9583	33592368
+vigra_bincount(data)	(1024, 1024, 256)	2.199949847330572	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's Macboock Pro M1	macOS-14.6.1-arm64-arm-64bit	75095	1073845863
+pandas_bincount(data)	(512, 128, 1)	0.000543610998041307	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's Macboock Pro M1	macOS-14.6.1-arm64-arm-64bit	982	1073266
+pandas_bincount(data)	(1024, 512, 1)	0.001370958333912616	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's Macboock Pro M1	macOS-14.6.1-arm64-arm-64bit	982	8470676
+pandas_bincount(data)	(2048, 1024, 1)	0.004976249998435378	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's Macboock Pro M1	macOS-14.6.1-arm64-arm-64bit	5556	33837734
+pandas_bincount(data)	(512, 512, 32)	0.02030030566190059	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's Macboock Pro M1	macOS-14.6.1-arm64-arm-64bit	7611	135289433
+pandas_bincount(data)	(1024, 1024, 256)	0.6154874583298806	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's Macboock Pro M1	macOS-14.6.1-arm64-arm-64bit	18465	4328554750
+numpy_ufunc_bincount(data)	(512, 128, 1)	0.00016813899856060743	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's Macboock Pro M1	macOS-14.6.1-arm64-arm-64bit	296	346851
+numpy_ufunc_bincount(data)	(1024, 512, 1)	0.0006964026639858881	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's Macboock Pro M1	macOS-14.6.1-arm64-arm-64bit	296	2181893
+numpy_ufunc_bincount(data)	(2048, 1024, 1)	0.002828889002557844	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's Macboock Pro M1	macOS-14.6.1-arm64-arm-64bit	296	8473351
+numpy_ufunc_bincount(data)	(512, 512, 32)	0.011435596999945119	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's Macboock Pro M1	macOS-14.6.1-arm64-arm-64bit	6834	33645679
+numpy_ufunc_bincount(data)	(1024, 1024, 256)	0.3679228333348874	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's Macboock Pro M1	macOS-14.6.1-arm64-arm-64bit	21479	1073863785
+numba_bincount(data)	(512, 128, 1)	0.013681874998534719	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's Macboock Pro M1	macOS-14.6.1-arm64-arm-64bit	1062306	1379658
+numba_bincount(data)	(1024, 512, 1)	0.012647430664704492	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's Macboock Pro M1	macOS-14.6.1-arm64-arm-64bit	1056980	3217715
+numba_bincount(data)	(2048, 1024, 1)	0.013942041667178273	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's Macboock Pro M1	macOS-14.6.1-arm64-arm-64bit	1055547	9507696
+numba_bincount(data)	(512, 512, 32)	0.01709634733075897	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's Macboock Pro M1	macOS-14.6.1-arm64-arm-64bit	1063032	34674153
+numba_bincount(data)	(1024, 1024, 256)	0.15592126399860717	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's Macboock Pro M1	macOS-14.6.1-arm64-arm-64bit	54907	1074866999
