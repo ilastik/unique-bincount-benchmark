@@ -10,7 +10,14 @@ generated {{ now }}, from results of {{ n_hosts }} machines
 
 ### Time
 
+#### Absolute
+
 ![unique-runningtime](unique-runningtime.png)
+
+#### Normalized to `numpy.unique` for each shape/host combination
+
+![unique-runningtime-normalized](unique-runningtime-normalized.png)
+
 
 ## Bincount
 
@@ -20,5 +27,10 @@ generated {{ now }}, from results of {{ n_hosts }} machines
 
 ### Time
 
+#### Absolute
+
 ![bincount-runningtime](bincount-runningtime.png)
 
+#### Normalized to `numpy.bincount` for each shape/host combination
+
+![bincount-runningtime-normalized](bincount-runningtime-normalized.png)
