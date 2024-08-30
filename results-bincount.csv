@@ -174,3 +174,28 @@ numba_bincount(data)	(1024, 512, 1)	0.04520684734840567	3.12.5	1.26.4	2.2.2	1.11
 numba_bincount(data)	(2048, 1024, 1)	0.047087031338984765	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's Macbook Air 2014 (i5)	macOS-11.7.10-x86_64-i386-64bit	1058812	9504567
 numba_bincount(data)	(512, 512, 32)	0.06276061900037651	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's Macbook Air 2014 (i5)	macOS-11.7.10-x86_64-i386-64bit	1061648	34679293
 numba_bincount(data)	(1024, 1024, 256)	0.39703902299515903	3.12.5	1.26.4	2.2.2	1.11.1	Dominik's Macbook Air 2014 (i5)	macOS-11.7.10-x86_64-i386-64bit	51680	1074866304
+numpy.bincount(data.reshape(-1))	(512, 128, 1)	0.000212900000008176	3.12.5	1.26.4	2.2.2	1.11.1	Lab Windows Laptop 14	Windows-10-10.0.19045-SP0	296	798581
+numpy.bincount(data.reshape(-1))	(1024, 512, 1)	0.0020767999999975473	3.12.5	1.26.4	2.2.2	1.11.1	Lab Windows Laptop 14	Windows-10-10.0.19045-SP0	296	6303639
+numpy.bincount(data.reshape(-1))	(2048, 1024, 1)	0.008780666666666548	3.12.5	1.26.4	2.2.2	1.11.1	Lab Windows Laptop 14	Windows-10-10.0.19045-SP0	296	25178009
+numpy.bincount(data.reshape(-1))	(512, 512, 32)	0.0304080666666664	3.12.5	1.26.4	2.2.2	1.11.1	Lab Windows Laptop 14	Windows-10-10.0.19045-SP0	6833	100698657
+numpy.bincount(data.reshape(-1))	(1024, 1024, 256)	1.0089817999999962	3.12.5	1.26.4	2.2.2	1.11.1	Lab Windows Laptop 14	Windows-10-10.0.19045-SP0	37053	3221288819
+vigra_bincount(data)	(512, 128, 1)	0.0014215000000111406	3.12.5	1.26.4	2.2.2	1.11.1	Lab Windows Laptop 14	Windows-10-10.0.19045-SP0	2127	278195
+vigra_bincount(data)	(1024, 512, 1)	0.009788566666657061	3.12.5	1.26.4	2.2.2	1.11.1	Lab Windows Laptop 14	Windows-10-10.0.19045-SP0	1772	2112882
+vigra_bincount(data)	(2048, 1024, 1)	0.03705110000000408	3.12.5	1.26.4	2.2.2	1.11.1	Lab Windows Laptop 14	Windows-10-10.0.19045-SP0	8255	8424802
+vigra_bincount(data)	(512, 512, 32)	0.15439706666666098	3.12.5	1.26.4	2.2.2	1.11.1	Lab Windows Laptop 14	Windows-10-10.0.19045-SP0	11745	33595095
+vigra_bincount(data)	(1024, 1024, 256)	4.8152008666666575	3.12.5	1.26.4	2.2.2	1.11.1	Lab Windows Laptop 14	Windows-10-10.0.19045-SP0	79446	1073850572
+pandas_bincount(data)	(512, 128, 1)	0.0010597666666664434	3.12.5	1.26.4	2.2.2	1.11.1	Lab Windows Laptop 14	Windows-10-10.0.19045-SP0	932	1073223
+pandas_bincount(data)	(1024, 512, 1)	0.003975433333323508	3.12.5	1.26.4	2.2.2	1.11.1	Lab Windows Laptop 14	Windows-10-10.0.19045-SP0	1230	8470931
+pandas_bincount(data)	(2048, 1024, 1)	0.0147894666666654	3.12.5	1.26.4	2.2.2	1.11.1	Lab Windows Laptop 14	Windows-10-10.0.19045-SP0	12452	33848587
+pandas_bincount(data)	(512, 512, 32)	0.05572603333333367	3.12.5	1.26.4	2.2.2	1.11.1	Lab Windows Laptop 14	Windows-10-10.0.19045-SP0	8064	135293846
+pandas_bincount(data)	(1024, 1024, 256)	1.7289354666666743	3.12.5	1.26.4	2.2.2	1.11.1	Lab Windows Laptop 14	Windows-10-10.0.19045-SP0	15543	4328552137
+numpy_ufunc_bincount(data)	(512, 128, 1)	0.005231499999998353	3.12.5	1.26.4	2.2.2	1.11.1	Lab Windows Laptop 14	Windows-10-10.0.19045-SP0	6675	354984
+numpy_ufunc_bincount(data)	(1024, 512, 1)	0.040766033333322106	3.12.5	1.26.4	2.2.2	1.11.1	Lab Windows Laptop 14	Windows-10-10.0.19045-SP0	6769	2208330
+numpy_ufunc_bincount(data)	(2048, 1024, 1)	0.15041453333333266	3.12.5	1.26.4	2.2.2	1.11.1	Lab Windows Laptop 14	Windows-10-10.0.19045-SP0	9796	8503535
+numpy_ufunc_bincount(data)	(512, 512, 32)	0.6167161000000002	3.12.5	1.26.4	2.2.2	1.11.1	Lab Windows Laptop 14	Windows-10-10.0.19045-SP0	16380	33676017
+numpy_ufunc_bincount(data)	(1024, 1024, 256)	19.127665200000006	3.12.5	1.26.4	2.2.2	1.11.1	Lab Windows Laptop 14	Windows-10-10.0.19045-SP0	70114	1073917318
+numba_bincount(data)	(512, 128, 1)	0.04218436666665563	3.12.5	1.26.4	2.2.2	1.11.1	Lab Windows Laptop 14	Windows-10-10.0.19045-SP0	1089300	1415488
+numba_bincount(data)	(1024, 512, 1)	0.041807999999984226	3.12.5	1.26.4	2.2.2	1.11.1	Lab Windows Laptop 14	Windows-10-10.0.19045-SP0	1092336	3246780
+numba_bincount(data)	(2048, 1024, 1)	0.04533343333334491	3.12.5	1.26.4	2.2.2	1.11.1	Lab Windows Laptop 14	Windows-10-10.0.19045-SP0	1086588	9539266
+numba_bincount(data)	(512, 512, 32)	0.0493337666666586	3.12.5	1.26.4	2.2.2	1.11.1	Lab Windows Laptop 14	Windows-10-10.0.19045-SP0	1094523	34712314
+numba_bincount(data)	(1024, 1024, 256)	0.2357938666666731	3.12.5	1.26.4	2.2.2	1.11.1	Lab Windows Laptop 14	Windows-10-10.0.19045-SP0	1099209	1074896098
