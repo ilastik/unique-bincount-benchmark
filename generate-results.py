@@ -2,10 +2,17 @@ import datetime
 from datetime import timedelta, timezone
 from pathlib import Path
 
+import numpy
 import pandas
 import pytz
 import seaborn as sns
 from jinja2 import Template
+from pint import UnitRegistry
+
+ureg = UnitRegistry()
+
+x = ureg.Quantity(1, "bytes")
+
 
 utctzinfo = timezone(timedelta(hours=0))
 timeformat = "%Y-%m-%dT%H:%M:%S"
@@ -13,25 +20,28 @@ timeformat = "%Y-%m-%dT%H:%M:%S"
 
 def gen_plots():
     shape_index_mapping = {
-        "(512, 128, 1)": "0",  # numpy.prod((512, 128, 1)),
-        "(1024, 512, 1)": "1",  # numpy.prod((1024, 512, 1)),
-        "(2048, 1024, 1)": "2",  # numpy.prod((2048, 1024, 1)),
-        "(512, 512, 32)": "3",  # numpy.prod((512, 512, 32)),
-        "(1024, 1024, 256)": "4",  # numpy.prod((1024, 1024, 256))
+        "(512, 128, 1)": numpy.prod((512, 128, 1)) * 4 * ureg.bytes,
+        "(1024, 512, 1)": numpy.prod((1024, 512, 1)) * 4 * ureg.bytes,
+        "(2048, 1024, 1)": numpy.prod((2048, 1024, 1)) * 4 * ureg.bytes,
+        "(512, 512, 32)": numpy.prod((512, 512, 32)) * 4 * ureg.bytes,
+        "(1024, 1024, 256)": numpy.prod((1024, 1024, 256)) * 4 * ureg.bytes,
     }
 
     results_unique = pandas.read_csv("results-unique.csv", sep="\t")
 
     results_unique["shape_ind"] = results_unique["shape"].map(shape_index_mapping)
+    results_unique["shape_ind_r"] = results_unique["shape_ind"].apply(lambda x: format(x.to_compact(), "~.0f"))
+    results_unique["memory_ref"] = results_unique["shape_ind"].apply(lambda x: x.magnitude)
+    results_unique["mem_max_norm"] = results_unique["mem_max"] / results_unique["memory_ref"]
 
-    p = sns.lineplot(x="shape_ind", y="t", hue="method", data=results_unique)
+    p = sns.lineplot(x="shape_ind_r", y="t", hue="method", data=results_unique)
     p.set(yscale="log")
     fig = p.get_figure()
     fig.savefig("unique-runningtime.png")
 
     p.clear()
 
-    p = sns.lineplot(x="shape_ind", y="mem_max", hue="method", data=results_unique)
+    p = sns.lineplot(x="shape_ind_r", y="mem_max_norm", hue="method", data=results_unique)
     p.set(yscale="log")
     fig = p.get_figure()
     fig.savefig("unique-max-memory.png")
@@ -70,26 +80,29 @@ def gen_plots():
 
     results_unique["normalized_t"] = results_unique.apply(normalize, axis=1)
 
-    p = sns.lineplot(x="shape_ind", y="normalized_t", hue="method", data=results_unique)
+    p = sns.lineplot(x="shape_ind_r", y="normalized_t", hue="method", data=results_unique)
     p.set(yscale="log")
     fig = p.get_figure()
     fig.savefig("unique-runningtime-normalized.png")
 
     p.clear()
 
-
     results_bincount = pandas.read_csv("results-bincount.csv", sep="\t")
 
     results_bincount["shape_ind"] = results_bincount["shape"].map(shape_index_mapping)
 
-    p = sns.lineplot(x="shape_ind", y="t", hue="method", data=results_bincount)
+    results_bincount["shape_ind_r"] = results_bincount["shape_ind"].apply(lambda x: format(x.to_compact(), "~.0f"))
+    results_bincount["memory_ref"] = results_bincount["shape_ind"].apply(lambda x: x.magnitude)
+    results_bincount["mem_max_norm"] = results_bincount["mem_max"] / results_bincount["memory_ref"]
+
+    p = sns.lineplot(x="shape_ind_r", y="t", hue="method", data=results_bincount)
     p.set(yscale="log")
     fig = p.get_figure()
     fig.savefig("bincount-runningtime.png")
 
     p.clear()
 
-    p = sns.lineplot(x="shape_ind", y="mem_max", hue="method", data=results_bincount)
+    p = sns.lineplot(x="shape_ind_r", y="mem_max_norm", hue="method", data=results_bincount)
     p.set(yscale="log")
     fig = p.get_figure()
     fig.savefig("bincount-max-memory.png")
@@ -128,13 +141,12 @@ def gen_plots():
 
     results_bincount["normalized_t"] = results_bincount.apply(normalize, axis=1)
 
-    p = sns.lineplot(x="shape_ind", y="normalized_t", hue="method", data=results_bincount)
+    p = sns.lineplot(x="shape_ind_r", y="normalized_t", hue="method", data=results_bincount)
     p.set(yscale="log")
     fig = p.get_figure()
     fig.savefig("bincount-runningtime-normalized.png")
 
     p.clear()
-
 
 
 def main():

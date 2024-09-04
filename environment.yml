@@ -9,4 +9,5 @@ dependencies:
   - ipython
   - ipdb
   - rich
+  - pint
   - numba
